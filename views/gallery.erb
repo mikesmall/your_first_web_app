@@ -2,3 +2,18 @@
 <% 25.times do |i| %>
   <img src="http://unsplash.it/200/300?random=<%=i%>">
 <% end %>
+
+<h1>About Me</h1>
+<h2>Skills</h2>
+<ul>
+  <% @skills.each do |skill| %>
+    <li> <%= skill %> </li>
+  <% end %>
+</ul>
+
+<h2>Interests</h2>
+<ul>
+  <% @interests.each do |interest| %>
+    <li> <%= interest %> </li>
+  <% end %>
+</ul>
