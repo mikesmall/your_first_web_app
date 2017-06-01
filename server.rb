@@ -4,3 +4,7 @@ require 'sinatra'
   get '/home' do
     erb :index
   end#get
+
+  get '/portfolio' do
+    erb :gallery 
+  end
