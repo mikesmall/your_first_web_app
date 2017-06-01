@@ -28,3 +28,8 @@ require 'sinatra'
     ]
     erb :favourites
   end#favourites
+
+  # Make a new route for get requests to localhost:4567/gallery that redirects you to localhost:4567/portfolio. Test it out and commit once it's working.
+  get '/gallery' do
+    erb :gallery 
+  end#gallery
