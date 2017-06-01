@@ -5,6 +5,10 @@ require 'sinatra'
     erb :index
   end#home
 
+  get '/' do
+    redirect to('/home')
+  end
+
   get '/portfolio' do
     erb :gallery
   end#portfolio
@@ -12,7 +16,7 @@ require 'sinatra'
   get '/about_me' do
     @skills = ['git', 'HTML', 'CSS', 'Ruby']
     @interests = ['cats', 'art', 'music', 'films', 'coffee']
-    erb :about_me  
+    erb :about_me
   end#about_me
 
   get '/favourites' do
